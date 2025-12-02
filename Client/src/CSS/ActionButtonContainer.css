@@ -1,0 +1,73 @@
+/* --- Global Button Reset and Base Style --- */
+.action-buttons-container button {
+  font-family: 'Pixelify Sans';
+  padding: 0.5rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  border-color: #000;
+  border-radius: 12px;
+  transition: all 0.2s ease-out;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  font-size: 0.75rem;
+  width: fit-content;
+  margin-left: 2rem;
+}
+
+.action-buttons-container {
+  display: flex;
+  flex-direction: column; /* Changed to stack vertically */
+  align-items: left; /* Center the buttons horizontally */
+}
+
+.main-click-button {
+  background: linear-gradient(145deg, #ead79b 0%, #a37a3e 100%);
+  color: #4b382d;
+  border: 2px solid #6d4c3d;
+  margin-top: -1rem;
+}
+
+.main-click-button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.main-click-button:active {
+  transform: translateY(2px) scale(0.98);
+  /* border-bottom: 2px solid #6d4c3d; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.action-donate {
+  background: linear-gradient(160deg, #444b50, #2c3034);
+  color: #d1d8e0;
+  font-size: 1rem;
+  border: 2px solid #1c1e20;
+}
+
+.action-donate:hover {
+  box-shadow: 0 0 15px #4d648d, 0 5px 15px rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+.action-donate:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.action-gamble {
+  background: linear-gradient(180deg, #333 0%, #000 100%);
+  color: #cc5500;
+  font-size: 1rem;
+  border: 2px dashed #8b0000;
+}
+
+.action-gamble:hover {
+  transform: translateY(-2px) skewX(2deg);
+  box-shadow: 0 0 20px #8b0000;
+}
+
+.action-gamble:active {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px #ff0000;
+}

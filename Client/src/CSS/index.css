@@ -1,0 +1,25 @@
+h1,
+h2 {
+  color: #00750e;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+body,
+html {
+  background-color: #f5f5dc;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.scroll-text {
+  background-color: rgba(245, 245, 220, 0.1);
+  border: 1px solid;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-style: italic;
+  line-height: 1.6;
+  border-radius: 5px;
+}

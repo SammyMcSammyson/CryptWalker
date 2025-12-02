@@ -1,0 +1,24 @@
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: -3rem;
+  padding: 2rem;
+  align-items: flex-start;
+}
+p {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+  min-width: 100%;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: -0.5rem;
+}
+
+.stat-value {
+  color: #c43b00;
+  font-weight: bolder;
+  /* border: 3px solid #00661a; */
+}

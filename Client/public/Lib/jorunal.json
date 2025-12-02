@@ -1,0 +1,182 @@
+[
+  {
+    "ID": 1,
+    "Name": "The Journey Begins",
+    "Advice": "Going down this path is long and dangerous",
+    "PriceToUnlock": 0,
+    "ConditionToNotDie": "N/A",
+    "StoryUnlock": "In the depths of the ancient dungeon, you tread cautiously your footsteps echoing ominously off the damp stone walls.- it is not like you are going to run head first into danger, you tried that last time and all you got was the princess complaining that she was saved too quickly and no one had time to miss her.",
+    "DeathMessage": "N/A"
+  },
+  {
+    "ID": 2,
+    "Name": "Bright Light of Doom",
+    "Advice": "Have you checked out the shop yet?",
+    "PriceToUnlock": 50,
+    "ConditionToNotDie": "N/A",
+    "StoryUnlock": "Your heart races as you grip your Iron Sword, ready for whatever lurks in the shadows. However, you seem to notice a bright light emanating in the distance. However, through your numerous watchings of Lord Of the Rings you know that this is not a good thing, and even worse you are clean shaven so no one can grab your beard to save you.",
+    "DeathMessage": "N/A"
+  },
+  {
+    "ID": 3,
+    "Name": "Skeleton Slayer",
+    "Advice": "Every Adventurer needs a Sword",
+    "PriceToUnlock": 100,
+    "ConditionToNotDie": "Sword",
+    "StoryUnlock": "A skeleton appears and you instinctively swing your sword, shattering the skull of the skeleton. Its bony remains clatter to the ground as a sense of victory washes over you - premature, but you have to enjoy the easy wins.",
+    "DeathMessage": "A skeleton appears and instinctively you swing your arm at it. However, you have no sword—probably should've bought one of those—and the skeleton makes quick work of you. At least you tried."
+  },
+  {
+    "ID": 4,
+    "Name": "Heartbreak Trap",
+    "Advice": "You know what goes nicely with a Sword...Armor",
+    "PriceToUnlock": 150,
+    "ConditionToNotDie": "Armor",
+    "StoryUnlock": "The further you venture into the dungeon, the colder and darker it becomes, causing you to trigger a trap which shoots a bolt right at your heart. As much as it is broken ever since your wife left, you are quite partial for it to remain unscathed.",
+    "DeathMessage": "The further you venture into the dungeon, the colder and darker it becomes, causing you to trigger a trap which shoots a bolt right at your heart. Not only is your heart emotionally broken from when your wife left you, it is now physically broken as well. Maybe if you had some armor to protect you..."
+  },
+  {
+    "ID": 5,
+    "Name": "Troll Union",
+    "Advice": "Union fees are due: 200 Gold",
+    "PriceToUnlock": 200,
+    "ConditionToNotDie": "Donated 200",
+    "StoryUnlock": "As you approach a large stone door, the troll guarding asks, 'Please donate some Gold to the Troll Union to help cover our lawyer costs - we are trying to sue the Dragon for unpaid wages.' Thanking your lucky stars that you already have donated money to the Troll Union, you proudly present your badge and the Troll swings the door open with a creak, allowing you to stride through while feeling like a hero who has just been given the VIP treatment.",
+    "DeathMessage": "As you approach a large stone door, the troll guarding asks, 'Please donate some Gold to the Troll Union to help cover our lawyer costs - we are trying to sue the Dragon for unpaid wages.' You politely inform him that you have donated *some* money; however, he deems it not enough since you have not got the 200 badge. Seems more like a bribe than a donation; however, you do not get to raise this with him since he has pummeled you to death. Serves you right for being tight."
+  },
+  {
+    "ID": 6,
+    "Name": "If it ain't stupid",
+    "Advice": "You have a Sword, you have some Armor but how are you going to do any magic???",
+    "PriceToUnlock": 250,
+    "ConditionToNotDie": "Mage's Staff",
+    "StoryUnlock": "As you walk deeper into the dungeon, your foot catches on a hidden rune - you are very good at triggering traps, however it may not be a good skill to have. A bolt of arcane magic shoots toward you. Thankfully, you’re armed with your Mage’s Staff, but you missed the lesson on creating magic shields. So, you throw the staff at the bolt instead. It shatters into pieces. If it looks stupid but it works, it ain't stupid.",
+    "DeathMessage": "As you walk deeper into the dungeon, your foot catches on a hidden rune - you are very good at triggering traps; however, it may not be a good skill to have. A bolt of arcane magic shoots toward you. Unfortunately for you, the day that shield spells were taught at school you were bunking off. Your last thoughts before you die is wishing you had something to intercept the bolt like a staff..."
+  },
+  {
+    "ID": 7,
+    "Name": "Is it a donation or a bribe?",
+    "Advice": "Union fees are due...Again",
+    "PriceToUnlock": 300,
+    "ConditionToNotDie": "N/A",
+    "StoryUnlock": "As you navigate through narrow passageways, you stumble upon a hidden alcove filled with Trolls animatedly discussing how they plan to sue the Dragon for unpaid wages. You hope to sneak by unnoticed, but to no avail. They catch you. As they approach, they notice your Troll Union Badge and let you pass unharmed. The donation is feeling more like a bribe by the second. However, can you really put a price on your life? You can—it's 200 Gold, but luckily, you already donated.",
+    "DeathMessage": "N/A"
+  },
+  {
+    "ID": 8,
+    "Name": "Crossbow Courage",
+    "Advice": "A range item would really complete your loadout",
+    "PriceToUnlock": 350,
+    "ConditionToNotDie": "Crossbow of Precision",
+    "StoryUnlock": "As you enter a dimly lit chamber, you hear the faint sound of bones rattling. Yay more skeletons you think to yourself. Instinctively, you reach for your crossbow and load a normal bolt *wink wink nudge nudge maybe you might need fire ones later*. From the shadows, a horde of undead stumbles toward you. Without hesitation, you take aim and fire. One by one, the zombieskeletons collapse. You were always good at crossbow practice at school.",
+    "DeathMessage": "As you enter a dimly lit chamber, you hear the faint sound of bones rattling. Yay more undead beings you think to yourself. Instinctively, you reach for your crossbow and remember you lost it in a game of Poker a few days ago. You should've really bought a replacement. While you are realizing the error of your ways, you are beaten to death by the hordes of undead."
+  },
+  {
+    "ID": 9,
+    "Name": "Helping Yourself",
+    "Advice": "I would collect some more gold if I were you",
+    "PriceToUnlock": 400,
+    "ConditionToNotDie": "N/A",
+    "StoryUnlock": "Remembering how the Dragon does not pay his workers, you quickly gather some treasure, telling yourself that you will give it to the Trolls on your way out to make up for lost wages. It's an outright lie, but it makes you feel better. You are 100% going to keep all the money for yourself.",
+    "DeathMessage": "N/A"
+  },
+  {
+    "ID": 10,
+    "Name": "Poker Night",
+    "Advice": "Are you really a gambling professional till you have lost at least 100 Gold? ",
+    "PriceToUnlock": 450,
+    "ConditionToNotDie": "Gamble at least -100",
+    "StoryUnlock": "With your arms full of gold, you stumble across several Trolls playing cards. Noticing your shiny Union Badge, they ask you to play. You can’t really say no to a Troll, so against your better judgment, you sit at the table. Luckily, gambling comes as second nature to you and you clear out the Trolls pretty quickly before going on your way.",
+    "DeathMessage": "With your arms full of gold, you stumble across several Trolls playing cards. Noticing your shiny Union Badge, they ask you to play. You cannot really say no to a Troll, so against your better judgment, you sit at the table. However, you have not really gambled that much in your life so do not really get the game or the rules. The Trolls quickly get frustrated at your lack of skills and realize it's more fun to eat you. If only you had spent more time gambling..."
+  },
+  {
+    "ID": 11,
+    "Name": "Portal Inquiry",
+    "Advice": "Trolls really love their union fees",
+    "PriceToUnlock": 500,
+    "ConditionToNotDie": "N/A",
+    "StoryUnlock": "Having walked for what seems like hours, you come across a set of Trolls guarding what looks like a magic portal. Quickly polishing your Union Badge, you approach them and ask, 'How far till I reach the dragon chamber?' The uglier one of the pair pipes up, 'You are about halfway, mate, and thanks for your donation. We appreciate it.' You remind yourself, if you ever kidnap a princess and have a lair, to pay your guards.",
+    "DeathMessage": "N/A"
+  },
+  {
+    "ID": 12,
+    "Name": "Another Donation???",
+    "Advice": "Normal arrows probably won't cut it for that much longer",
+    "PriceToUnlock": 550,
+    "ConditionToNotDie": "Fire Arrows",
+    "StoryUnlock": "As you are leaving the troll guarding it  asks “You’ll have any Fire Arrows?. I am pretty sure zombies are going to start pouring out this portal any minute and burning them is the best way to kill them” Not wanting to anger them you hand over your stash of Fire Arrows you collected earlier. Thinking to yourself that what kind of boss does not provide adequete PPE to his employees",
+    "DeathMessage": "As you are leaving the troll guarding it  asks “You’ll have any Fire Arrows?. I am pretty sure zombies are going to start pouring out this portal any minute and burning them is the best way to kill them”. Unfortunatly you do not have any fire arrows on you. Before the Troll even has time to complain about 50 zombies burst through the portal. Just before your brain gets eaten you think to yourself that what kind of boss does not provide adequete PPE to his employees"
+  },
+  {
+    "ID": 13,
+    "Name": "Goblin Football",
+    "Advice": "Some people believe football is a matter of life and death, I am very disappointed with that attitude. I can assure you it is much, much more important than that.",
+    "PriceToUnlock": 600,
+    "ConditionToNotDie": "N/A",
+    "StoryUnlock": "After navigating a twisting maze of tunnels, you stumble upon a group of Goblins playing football - one you notice is wearing a Leicester City Shirt. You casually show them your Leicester City Supporters Card, and one of them looks up and says “Take the left path if you're looking for the dragon.” As you walk away, you make a mental note to pay your Leicerter Supporters Club fees.",
+    "DeathMessage": "N/A"
+  },
+  {
+    "ID": 14,
+    "Name": "Healthcare is Important",
+    "Advice": "Everyone gets injuries",
+    "PriceToUnlock": 650,
+    "ConditionToNotDie": "N/A",
+    "StoryUnlock": "Further down the cavern, you encounter a heavily armored Minotaur blocking your path - however it is obvious he is carrying an injury. You quickly throw him a bag of gold. He nods appreciatively, stepping aside. “The dragon’s just beyond the next chamber, friend.” Working for the Dragon clearly does not pay well or have good benefits - however who else is going to hire a minotaur .",
+    "DeathMessage": "N/A"
+  },
+  {
+    "ID": 15,
+    "Name": "Lawyers Fees",
+    "Advice": "I really hope you have invested into earning Gold every Second. Having it around 15 is a healthy number to aim for ",
+    "PriceToUnlock": 700,
+    "ConditionToNotDie": "GPS > 15",
+    "StoryUnlock": "As you approach what must be the final Chamber you see the head of the Troll Union - you know this since he is wearing his Head of Union Hat - talking to what must be a Lawyer. The Troll notices you and is about to Thank you for being a member of the union before the Lawyer quickly interupts. “ I can represent you in court to sue the Dragon for medical fees, for a fee of course”. Just wanting to hurry up and defeat the dragon at this point you pay his fee. And go through the final door... ",
+    "DeathMessage": "As you approach what must be the final Chamber you see the head of the Troll Union - you know this since he is wearing his Head of Union Hat - talking to what must be a Lawyer. The Troll notices you and is about to Thank you for being a member of the union before the Lawyer quickly interupts. “I can represent you in court to sue the Dragon for medical fees, for a fee of course”. Backing your ability in not getting injured while fighting the Dragon, you try and refuse but the Lawyer keeps trying to convince you. He eventually knocks the price down to 15 Gold per Second which is an absloute bargin. However in all this the Troll remembered that he has a job to do and quickly pummels you to death. I guess being a union member can not protect you forever.."
+  },
+  {
+    "ID": 16,
+    "Name": "Beginning of the End",
+    "Advice": "You are nearlt there.",
+    "PriceToUnlock": 750,
+    "ConditionToNotDie": "N/A",
+    "StoryUnlock": "You take a deep breath, remembering the tales of its fierce power and cunning, and prepare yourself for the battle that is about to unfold. And thank God that your trousers are brown...",
+    "DeathMessage": "N/A"
+  },
+  {
+    "ID": 17,
+    "Name": "Blood",
+    "Advice": "You have faced a lot of action you should probably bre a potion to help restore your health",
+    "PriceToUnlock": 800,
+    "ConditionToNotDie": "Healing Potion",
+    "StoryUnlock": "Spotting the princess, trapped in a cage suspended from the ceiling, you know you must defeat the beast to save her. You step forward straight into a spike trap. Luckily you have your healing potions and quickly recover. However the Princess  exclaims “You must be the worst Knight I have heard of you fell for the most obvious trap.”. Channeling your inner Captain Jack Sparrow you quickly reply. “But you have heard of me”.",
+    "DeathMessage": "Spotting the princess, trapped in a cage suspended from the ceiling, you know you must defeat the beast to save her. You step forward straight into a spike trap. However you have no healing potions and cannot stem the blood loss. As you feel the life draining out of you the last words you ever hear are from the Princesses mouth. “Any decent adventurer has health potions on them at all times”"
+  },
+  {
+    "ID": 18,
+    "Name": "The Final Troll",
+    "Advice": "The Trolls are back",
+    "PriceToUnlock": 850,
+    "ConditionToNotDie": "N/A",
+    "StoryUnlock": "You start walking deeper into the chamber you notice what seem to be 5 trolls guarding the sleeping Dragon. As you go to polish your Union Badge - Need to make it nice and shiny so they can not miss it. The donation is really paying off. You hear the princess scream “They are Orges not Trolls you dummy...”",
+    "DeathMessage": "N/A"
+  },
+  {
+    "ID": 19,
+    "Name": "Harry Potter",
+    "Advice": "If you do not know what you need by now you deserve to die",
+    "PriceToUnlock": 900,
+    "ConditionToNotDie": "Invisibility Cloak",
+    "StoryUnlock": "Knowing your only chance to sneak past  the ogres is not being seen. Lucky for you you slip on you cloak of invisibility and are finally face to face with the sleeping Dragon. Wanting it to be a fair fight you prod him awake instead of him while he sleeps. At this point the princess starts questioning her life choices if this is the best that comes to help save her.",
+    "DeathMessage": "Knowing your only chance to sneak past  the ogres is not being seen. Remembering back to when you were watching Mythbusters and they showed an episode how you could not be seen if you cover your face. You put your balaclava on and walk right past the orges. It is at this point the Princess - who had also seen the sam e episodes - points how it was not be identified not be seen and the shop litreally sells invisbility cloaks. The orges have not seen mythbusters but they have seen you start walking towards you. I could explain in grusome detail what happens next but fundementally you are dead."
+  },
+  {
+    "ID": 20,
+    "Name": "The End of the Beginning ",
+    "Advice": "Good Luck",
+    "PriceToUnlock": 1000,
+    "ConditionToNotDie": "N/A",
+    "StoryUnlock": "With a roar, the dragon lunges at you, its fiery breath filling the cavern. You leap to the side, raising your sword high and bringing it down with all your strength, striking the beast's heart. The dragon lets out a deafening cry as it collapses, its reign of terror finally over - and wages still unpaid. As the dust settles, you rush to the princess, freeing her from the cage, and she immediatly starts complaing about what took so long. You can never win with these princesses sometimes you are to fast sometimes to slow. However the dragon is dead and the princess is saved and the long journey ends with both treasure and triumph. However you now have a group of angry Trolls after you since you killed there boss meaning he can not pay there wages... But that is another story for another time...",
+    "DeathMessage": "N/A"
+  }
+]
