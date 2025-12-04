@@ -1,16 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import GameUI from '../Components/GameUI';
 
 function GameContainer() {
   // --- The Source of Truth ---
-  const [totalGold, setTotalGold] = useState(0);
+  const [totalGold, setTotalGold] = useState(500);
   const [clickState, setClickState] = useState(0);
   const [goldPerSecond, setGoldPerSecond] = useState(0.0);
   const [goldPerClick, setGoldPerClick] = useState(1);
-  const [goldDonated, setGoldDonated] = useState(0);
+  const [goldDonated, setGoldDonated] = useState(100);
   const [gamblings, setGamblings] = useState(0);
+  const [gamblingsAmount, setGamblingsAmounts] = useState(100);
+  const [ownedItems, setOwnedItems] = useState([]);
 
   // --- TEMPORARY FIX TO REMOVE UNUSED VARIABLE WARNINGS ---
   const __ignoreWarnings = () => {
@@ -18,7 +20,7 @@ function GameContainer() {
     setGoldPerSecond(goldPerSecond);
   };
 
-  // --- 2. Action Handlers ---
+  // --- Action Handlers ---
 
   // Action: Gold Per Click
   const handleGoldClick = () => {
@@ -66,6 +68,7 @@ function GameContainer() {
         netChange = losings + cost;
         let netChange4Show = Math.abs(netChange);
         setGamblings((prevCount) => prevCount - netChange);
+        setGamblingsAmounts((prev) => prev + 10);
 
         // Toast for loss
         toast.error(`You lost ${netChange4Show} gold. You loser.`, {
@@ -90,6 +93,7 @@ function GameContainer() {
 
         console.log(`You won ${netChange} gold!`);
         setGamblings((prevCount) => prevCount + winnings); // Track gambling made/lost
+        setGamblingsAmounts((prev) => prev + 10);
         setTotalGold((prevGold) => prevGold + netChange);
       }
     } else {
@@ -98,12 +102,91 @@ function GameContainer() {
         'You need more gold you povo, I would suggest having at least 50 gold if you can afford it you poor fuck.',
         {
           theme: 'colored',
-          autoClose: 1000,
+          autoClose: 2000,
         }
       );
       console.log('Not enough gold to gamble! Need 50 gold.');
     }
   };
+
+  //purchases items from shop and stores in inventory
+
+  const handlePurchaseItem = useCallback(
+    (item) => {
+      const cost = Number(item.price);
+
+      if (totalGold < cost) {
+        toast.error(
+          `You need ${cost - totalGold} more gold to buy ${item.name}!`,
+          { theme: 'colored' }
+        );
+        return;
+      }
+
+      setTotalGold((prevGold) => prevGold - cost);
+
+      if (item.goldPerClick) {
+        setGoldPerClick((prev) => prev + Number(item.goldPerClick));
+      }
+
+      if (item.goldPerSecond || item.goldPerSecond === '0') {
+        setGoldPerSecond((prev) => prev + Number(item.goldPerSecond));
+      }
+
+      setOwnedItems((prev) => {
+        const existing = prev.find((i) => i.id === item.id);
+        if (existing) {
+          return prev.map((i) =>
+            i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
+          );
+        }
+        return [...prev, { ...item, quantity: 1 }];
+      });
+
+      toast.success(`Purchased ${item.name} for ${cost} gold!`, {
+        theme: 'colored',
+      });
+      console.log(
+        'this is in the purchase button ',
+        item.goldPerClick,
+        ownedItems
+      );
+    },
+    [totalGold, ownedItems]
+  );
+
+  //purchases items from shop and stores in inventory
+
+  const handleSellItem = useCallback(
+    (item) => {
+      const sellPrice = Math.floor(item.price * 0.5);
+
+      const owned = ownedItems.find((i) => i.id === item.id);
+      if (!owned || owned.quantity <= 0) {
+        toast.error(`You don't own any ${item.name} to sell!`, {
+          theme: 'colored',
+        });
+        return;
+      }
+
+      setOwnedItems((prev) => {
+        return prev
+          .map((i) =>
+            i.id === item.id ? { ...i, quantity: i.quantity - 1 } : i
+          )
+          .filter((i) => i.quantity > 0);
+      });
+
+      setTotalGold((prev) => prev + sellPrice);
+
+      toast.success(`Sold ${item.name} for ${sellPrice} gold.`, {
+        theme: 'colored',
+      });
+
+      console.log(`Sold 1x ${item.name}. New inventory:`, ownedItems);
+    },
+    [ownedItems]
+  );
 
   // --- Flag Effects for certain alerts to appear ---
 
@@ -112,14 +195,8 @@ function GameContainer() {
     const alertKey = 'alerted_goldDonated_upgrade';
 
     if (totalGold > 19 && localStorage.getItem(alertKey) === null) {
-      toast.info(
-        `Wow looks like you can Donate gold to the Troll Union. I guess even Trolls want fair pay.`,
-        {
-          position: 'top-center',
-          autoClose: 5000,
-          theme: 'colored',
-          transition: Bounce,
-        }
+      alert(
+        `Wow looks like you can Donate gold to the Troll Union. I guess even Trolls want fair pay.`
       );
       localStorage.setItem(alertKey, 'true');
     }
@@ -130,14 +207,24 @@ function GameContainer() {
     const alertKey = 'alerted_Gambling_upgrade';
 
     if (goldDonated > 50 && localStorage.getItem(alertKey) === null) {
-      // Toast for feature unlock
-      toast.info(
-        `Hey guess there are some perks of donated to the Troll Union. Looks like you can use their slots machine and Gamble some of your gold.`,
-        { theme: 'colored', transition: Bounce, autoClose: 5000 }
+      alert(
+        `Hey guess there are some perks of donated to the Troll Union. Looks like you can use their slots machine and Gamble some of your gold.`
       );
       localStorage.setItem(alertKey, 'true');
     }
   }, [goldDonated]);
+
+  // Shop Flag for initial showing (Unlocks Shop Button permanently)
+  useEffect(() => {
+    const alertKey = 'alerted_Shop_upgrade';
+
+    if (gamblingsAmount > 100 && localStorage.getItem(alertKey) === null) {
+      alert(
+        `The Pit Boss seeing that you like the slots - are shit at it - politley reminds you that you came here on an Adventure and points over to a shop where you can buy some gear. He also recomends buying the Journal...`
+      );
+      localStorage.setItem(alertKey, 'true');
+    }
+  }, [gamblingsAmount]);
 
   // Handles passive Gold Per Second income
   useEffect(() => {
@@ -153,7 +240,8 @@ function GameContainer() {
     { goldPerSecond },
     { goldPerClick },
     { goldDonated },
-    { gamblings }
+    { gamblings },
+    { gamblingsAmount }
   );
 
   return (
@@ -163,10 +251,14 @@ function GameContainer() {
       goldPerClick={goldPerClick}
       goldDonated={goldDonated}
       gamblings={gamblings}
+      gamblingsAmount={gamblingsAmount}
       clickState={clickState}
+      ownedItems={ownedItems}
       onDonate={handleDonateGold}
       onGamble={handleGambleGold}
       onGoldClick={handleGoldClick}
+      onPurchaseItem={handlePurchaseItem}
+      onSellItem={handleSellItem}
     />
   );
 }

@@ -1,0 +1,90 @@
+.item-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.item-details p {
+  border: 2px solid #00750e;
+  border-radius: 5px;
+  background-color: #f5f5dc;
+  margin: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #333;
+  justify-content: space-between;
+}
+
+.item-details p:last-child {
+  background-color: #e0f7fa;
+  color: #00796b;
+  justify-content: center;
+}
+
+.shop-item-card {
+  border: 4px solid #c43b00;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.item-details .item-description {
+  flex-basis: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-box {
+  background-color: #f5f5dc;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* The close button (X) */
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 50px;
+  line-height: 1;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #c43b00;
+  font-weight: 300;
+  transition: color 0.2s;
+}
+
+.modal-close-btn:hover {
+  color: #ff5722;
+}
+
+.ShopTitle {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 1rem;
+}

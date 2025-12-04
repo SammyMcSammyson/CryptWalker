@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Journal",
+    "description": "It will tell you your story - for a price...",
+    "price": 0,
+    "goldPerSecond": 0,
+    "goldPerClick": 0,
+    "attack": 0,
+    "health": 0,
+    "unknown": "???"
+  },
+  {
+    "id": 2,
+    "name": "Sword",
+    "description": "A reliable blade for battling monsters in dark corridors.",
+    "price": 200,
+    "goldPerSecond": 0,
+    "goldPerClick": 1,
+    "attack": 1,
+    "health": 0,
+    "unknown": "???"
+  },
+  {
+    "id": 3,
+    "name": "Armor",
+    "description": "Light and flexible armor, offering basic protection.",
+    "price": 200,
+    "goldPerSecond": 1,
+    "goldPerClick": 0,
+    "attack": 0,
+    "health": 1,
+    "unknown": "???"
+  },
+  {
+    "id": 4,
+    "name": "Mage's Staff",
+    "description": "A staff imbued with elemental magic for powerful spellcasting.",
+    "price": 300,
+    "goldPerSecond": 0,
+    "goldPerClick": 1.5,
+    "attack": 1.5,
+    "health": 0,
+    "unknown": "???"
+  },
+  {
+    "id": 5,
+    "name": "Crossbow of Precision",
+    "description": "A ranged weapon designed for quick, accurate shots in tight dungeon spaces.",
+    "price": 400,
+    "goldPerSecond": 0,
+    "goldPerClick": 2,
+    "attack": 2,
+    "health": 0,
+    "unknown": "???"
+  },
+  {
+    "id": 6,
+    "name": "Fire Arrows",
+    "description": "Arrows tipped with fire to deal extra damage to enemies.",
+    "price": 500,
+    "goldPerSecond": 0,
+    "goldPerClick": 3,
+    "attack": 3,
+    "health": 0,
+    "unknown": "???"
+  },
+  {
+    "id": 7,
+    "name": "Healing Potion",
+    "description": "Restores a small amount of health instantly. You never know when it might come in handy.",
+    "price": 50,
+    "goldPerSecond": 5,
+    "goldPerClick": 0,
+    "attack": 0,
+    "health": 5,
+    "unknown": "???"
+  },
+  {
+    "id": 8,
+    "name": "Invisibility Cloak",
+    "description": "A cloak that makes the wearer invisible.",
+    "price": 1000,
+    "goldPerSecond": 5,
+    "goldPerClick": 0,
+    "attack": 0,
+    "health": 5,
+    "unknown": "???"
+  },
+  {
+    "id": 9,
+    "name": "Adventurers Guild",
+    "description": "You have made enough money adventuring that you decide to buy your own guild... Probably need to defeat a dragon before you buy this.",
+    "price": 10000,
+    "goldPerSecond": 0,
+    "goldPerClick": 0,
+    "attack": 0,
+    "health": 0,
+    "unknown": "???"
+  }
+]

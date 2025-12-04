@@ -7,6 +7,7 @@ function Stats({
   goldPerClick,
   goldDonated,
   gamblings,
+  gamblingsAmount,
 }) {
   return (
     <div className='stats-container'>
@@ -25,7 +26,7 @@ function Stats({
       )}
 
       {/* Gold Per Click: Show if goldPerClick > 1 */}
-      {goldPerClick > 0 && (
+      {goldPerClick > 1 && (
         <p className='stats-GoldPerClick'>
           <span className='stat-label'>Gold Per Click</span>
           <span className='stat-value'>{goldPerClick}</span>
@@ -50,7 +51,7 @@ function Stats({
       )}
 
       {/* Gambling (Net Winnings/Losses): Show if the value is NOT 0 */}
-      {gamblings !== 0 && (
+      {gamblingsAmount !== 0 && (
         <p className='stats-Gamblings'>
           <span className='stat-label'>Gambling Winnings</span>
           <span className='stat-value'>{gamblings}</span>

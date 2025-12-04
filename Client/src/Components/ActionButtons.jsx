@@ -7,7 +7,10 @@ function ActionButtons({
   onGoldClick,
   clickState,
   goldDonated,
+  onOpenShop,
+  gamblingsAmount,
 }) {
+  console.log('this is in actionButtons ', { gamblingsAmount });
   return (
     <div className='action-buttons-container'>
       {/* Main clicker button is always */}
@@ -26,6 +29,12 @@ function ActionButtons({
       {goldDonated > 50 && (
         <button className='action-gamble' onClick={onGamble}>
           Gamble 10 Gold
+        </button>
+      )}
+      {/* Open Shop Button: Opens and Closes Shop */}
+      {gamblingsAmount > 100 && (
+        <button className='shop-button' onClick={onOpenShop}>
+          Open Shop
         </button>
       )}
     </div>
